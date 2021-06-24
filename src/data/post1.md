@@ -8,4 +8,6 @@ slug: post1
 ## from around the world
 ___
 
+![GATSBY_EMPTY_ALT](../images/treeInForest.jpg)
+
 ### In all sorts of wonderful shapes, colors, and sizes.
