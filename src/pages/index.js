@@ -1,12 +1,13 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
+import Layout from '../templates/layout';
 
 const Index = ({ data }) => {
   return (
-    <div>
+    <Layout>
       <h1>Hello World!</h1>
       <StaticImage
-        formats={['webp']}
+        formats={['jpg']}
         src='../images/treeInForest.jpg'
         alt='A Tree in a Forest during the day.'
         // placeholder='blurred'
@@ -22,7 +23,7 @@ const Index = ({ data }) => {
           Unsplash
         </a>
       </p>
-    </div>
+    </Layout>
   );
 };
 

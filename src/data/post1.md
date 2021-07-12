@@ -1,7 +1,7 @@
 ---
 title: Post 1
-description: Birds
 slug: post1
+featuredImage: '../images/lighthouseIceland.jpg'
 ---
 
 # Parrots and Parakeets
