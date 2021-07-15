@@ -7,23 +7,27 @@ const Header = (props) => {
     return edge.node.name !== '404';
   });
   return (
-    <ul>
-      {links.map((link) => {
-        return (
-          <li key={link.node.name}>
-            <Link to={link.node.name === 'index' ? '/' : '/' + link.node.name}>
-              {link.node.name === 'index' ? 'home' : link.node.name}
-            </Link>
-          </li>
-        );
-      })}
-    </ul>
+    <header>
+      <ul>
+        {links.map((link) => {
+          return (
+            <li key={link.node.name}>
+              <Link
+                to={link.node.name === 'index' ? '/' : '/' + link.node.name}
+              >
+                {link.node.name === 'index' ? 'home' : link.node.name}
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
+    </header>
   );
 };
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div id='layoutContainer'>
       <StaticQuery
         query={graphql`
           query {
