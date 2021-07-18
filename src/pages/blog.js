@@ -47,8 +47,7 @@ const PostsContainer = styled.div`
     padding: 20px;
   }
   @media only screen and (max-width: 900px) {
-      grid-template-columns: 1fr;
-    }
+    grid-template-columns: 1fr;
   }
 `;
 
