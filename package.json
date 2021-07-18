@@ -11,7 +11,10 @@
     "serve": "gatsby build && gatsby serve"
   },
   "dependencies": {
+    "@emotion/react": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
     "gatsby": "^3.8.1",
+    "gatsby-plugin-emotion": "^6.9.0",
     "gatsby-plugin-image": "^1.8.0",
     "gatsby-plugin-sass": "^4.9.0",
     "gatsby-plugin-sharp": "^3.8.0",

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { StaticQuery, graphql } from 'gatsby';
+import styled from '@emotion/styled';
 
 const Header = (props) => {
   let links = props.data.allFile.edges.filter((edge) => {
@@ -43,8 +44,34 @@ const Layout = ({ children }) => {
         render={(data) => <Header data={data} />}
       />
       {children}
+      <Footer />
     </div>
   );
 };
+
+const Footer = () => {
+  return (
+    <StyledFooter light>
+      <div className='footer-content'>
+        <p>&copy;Copyright 2021</p>
+      </div>
+    </StyledFooter>
+  );
+};
+
+const StyledFooter = styled.footer`
+  background-color: oldlace;
+  padding: 20px;
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    max-width: 650px;
+    background-color: ${(props) => (props.light ? 'oldlace' : 'slategrey')};
+    color: ${(props) => (props.light ? 'slategrey' : 'oldlace')};
+  }
+`;
 
 export default Layout;

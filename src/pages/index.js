@@ -13,7 +13,7 @@ const Index = ({ data }) => {
         // placeholder='blurred'
         // layout='fixed'
       />
-      <p>
+      <p className='caption'>
         Photo by{' '}
         <a href='https://unsplash.com/@veeterzy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>
           veeterzy

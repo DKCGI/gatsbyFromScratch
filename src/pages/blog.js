@@ -13,7 +13,7 @@ const Blog = () => {
         <div className='posts-container'>
           {edges.map((edge) => {
             return (
-              <div className='post-container'>
+              <div className='post-container' key={edge.node.frontmatter.slug}>
                 <h1>
                   <Link to={'/' + edge.node.frontmatter.slug}>
                     {edge.node.frontmatter.title}
