@@ -7,8 +7,10 @@ export const usePostData = () => {
         allMarkdownRemark {
           edges {
             node {
-              frontmatter {
+              fields {
                 slug
+              }
+              frontmatter {
                 title
                 featuredImage {
                   name

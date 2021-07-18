@@ -6,6 +6,7 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-emotion',
     `gatsby-plugin-preact`,
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
       options: {

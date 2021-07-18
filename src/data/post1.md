@@ -1,6 +1,5 @@
 ---
 title: Parrots and Parakeets
-slug: parrotsandparakeets
 featuredImage: '../images/lighthouseIceland.jpg'
 ---
 

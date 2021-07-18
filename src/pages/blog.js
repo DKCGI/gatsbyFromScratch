@@ -14,9 +14,9 @@ const Blog = () => {
         <PostsContainer>
           {edges.map((edge) => {
             return (
-              <div className='post-container' key={edge.node.frontmatter.slug}>
+              <div className='post-container' key={edge.node.fields.slug}>
                 <h1>
-                  <Link to={'/' + edge.node.frontmatter.slug}>
+                  <Link to={edge.node.fields.slug}>
                     {edge.node.frontmatter.title}
                   </Link>
                 </h1>

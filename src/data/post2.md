@@ -1,6 +1,5 @@
 ---
 title: Post 2
-slug: post2
 featuredImage: '../images/lighthouseIceland.jpg'
 ---
 
