@@ -1,10 +1,8 @@
 ---
-title: Post 1
-slug: post1
+title: Parrots and Parakeets
+slug: parrotsandparakeets
 featuredImage: '../images/lighthouseIceland.jpg'
 ---
-
-# Parrots and Parakeets
 
 ## from around the world
 

@@ -25,6 +25,7 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sass',
+    'gatsby-plugin-emotion',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -32,7 +33,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 400,
+              maxWidth: 650,
             },
           },
         ],

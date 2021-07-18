@@ -10,7 +10,7 @@ const Markdown = ({ data }) => {
     <Layout>
       <div className='markdown-container'>
         {image && (
-          <div class='image-container'>
+          <div className='image-container'>
             <GatsbyImage
               image={image}
               alt={markdownRemark.frontmatter.featuredImage.name}
@@ -35,7 +35,7 @@ export const pageQuery = graphql`
         featuredImage {
           name
           childImageSharp {
-            gatsbyImageData(width: 800, placeholder: TRACED_SVG)
+            gatsbyImageData(placeholder: TRACED_SVG)
           }
         }
       }

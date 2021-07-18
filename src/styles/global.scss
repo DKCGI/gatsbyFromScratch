@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Amaranth:wght@700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +7,18 @@
 }
 body {
   background-color: oldlace;
+  font-family: 'Abel', sans-serif;
+  font-size: 1.2em;
+}
+h1,
+h2 {
+  font-family: 'Amaranth', sans-serif;
+  color: cornsilk;
+}
+.caption {
+  background-color: rgb(39, 59, 68);
+  color: cornsilk;
+  padding: 5px 20px;
 }
 #layoutContainer {
   background-color: rgb(39, 59, 68);
@@ -13,6 +27,7 @@ body {
 header {
   color: rgb(43, 43, 43);
   background-color: oldlace;
+  font-family: 'Amaranth', sans-serif;
   ul {
     display: flex;
     justify-content: space-evenly;
@@ -38,7 +53,6 @@ header {
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   column-gap: 20px;
-  background-color: cornsilk;
   padding: 20px;
 }
 .post-container {
@@ -50,12 +64,38 @@ header {
 }
 .image-container {
   width: 100%;
+  height: 60vh;
+  object-fit: cover;
   display: flex;
   justify-content: center;
 }
 .markdown-container {
-  width: 800px;
+  width: 100%;
   margin: auto;
+  color: #fff;
+  line-height: 1.5em;
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    max-width: 100%;
+    width: 650px;
+    margin: auto;
+    padding: 10px;
+  }
+  h1,
+  h2 {
+    padding: 20px;
+  }
+  hr {
+    margin: 20px;
+  }
+  .gatsby-resp-image-wrapper {
+    margin: 20px;
+  }
 }
 h1,
 h2 {
