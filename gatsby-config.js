@@ -1,5 +1,11 @@
 module.exports = {
   plugins: [
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sass',
+    'gatsby-plugin-emotion',
+    `gatsby-plugin-preact`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -21,11 +27,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    'gatsby-plugin-image',
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sass',
-    'gatsby-plugin-emotion',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -39,5 +40,19 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Rocco`,
+        short_name: `Roc`,
+        start_url: `/`,
+        background_color: `rgb(39, 59, 68)`,
+        theme_color: `oldlace`,
+        display: `standalone`,
+        icon: `src/images/icon.jpg`,
+        crossOrigin: `use-credentials`,
+      },
+    },
+    'gatsby-plugin-offline',
   ],
 };
