@@ -4,13 +4,16 @@ export const usePostData = () => {
   const posts = useStaticQuery(
     graphql`
       query PostData {
-        allMarkdownRemark {
+        allMarkdownRemark(sort: { fields: frontmatter___date, order: ASC }) {
           edges {
             node {
+              timeToRead
+              excerpt
               fields {
                 slug
               }
               frontmatter {
+                date(formatString: "ddd MMM Do yy")
                 title
                 featuredImage {
                   name

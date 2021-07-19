@@ -1,6 +1,7 @@
 ---
 title: Parrots and Parakeets
 featuredImage: '../images/lighthouseIceland.jpg'
+date: 2021-07-10
 ---
 
 ## from around the world

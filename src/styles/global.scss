@@ -10,10 +10,12 @@ body {
   font-family: 'Abel', sans-serif;
   font-size: 1.2em;
 }
+a {
+  text-decoration: none;
+}
 h1,
 h2 {
   font-family: 'Amaranth', sans-serif;
-  color: cornsilk;
 }
 .caption {
   background-color: rgb(39, 59, 68);
@@ -58,8 +60,8 @@ header {
 .markdown-container {
   width: 100%;
   margin: auto;
-  color: #fff;
   line-height: 1.5em;
+  color: cornsilk;
   p,
   h1,
   h2,

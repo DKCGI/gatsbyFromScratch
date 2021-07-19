@@ -1,7 +1,7 @@
 ---
-title: Post 2
+title: Post 3
 featuredImage: '../images/lighthouseIceland.jpg'
-date: 2021-07-11
+date: 2021-07-12
 ---
 
 # Rocco The Ringneck

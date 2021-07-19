@@ -15,15 +15,16 @@ const Blog = () => {
           {edges.map((edge) => {
             return (
               <div className='post-container' key={edge.node.fields.slug}>
-                <h1>
-                  <Link to={edge.node.fields.slug}>
-                    {edge.node.frontmatter.title}
-                  </Link>
-                </h1>
-                <GatsbyImage
-                  image={getImage(edge.node.frontmatter.featuredImage)}
-                  alt={edge.node.frontmatter.featuredImage.name}
-                ></GatsbyImage>
+                <Link to={edge.node.fields.slug}>
+                  <p className='date'>{edge.node.frontmatter.date}</p>
+                  <h1>{edge.node.frontmatter.title}</h1>
+                  <GatsbyImage
+                    image={getImage(edge.node.frontmatter.featuredImage)}
+                    alt={edge.node.frontmatter.featuredImage.name}
+                  ></GatsbyImage>
+                  <p className='excerpt'>{edge.node.excerpt}</p>
+                  <p className='ttr'>A lovely {edge.node.timeToRead} read.</p>
+                </Link>
               </div>
             );
           })}
