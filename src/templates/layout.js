@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from '@emotion/styled';
+import { Helmet } from 'react-helmet';
 
 const Header = (props) => {
   let links = props.data.allFile.edges.filter((edge) => {
@@ -44,6 +45,11 @@ const Layout = ({ children }) => {
         render={(data) => <Header data={data} />}
       />
       {children}
+      <Helmet>
+        <meta charSet='utf-8' />
+        <title>Parrots</title>
+        {/* <link rel="canonical" href="http://mysite.com/example" /> */}
+      </Helmet>
       <Footer />
     </div>
   );

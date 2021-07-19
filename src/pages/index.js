@@ -10,6 +10,7 @@ const Index = ({ data }) => {
         formats={['jpg']}
         src='../images/treeInForest.jpg'
         alt='A Tree in a Forest during the day.'
+        loading='eager'
         // placeholder='blurred'
         // layout='fixed'
       />
