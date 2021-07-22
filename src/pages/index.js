@@ -5,7 +5,7 @@ import Layout from '../templates/layout';
 const Index = ({ data }) => {
   return (
     <Layout>
-      <h1>Hello World!</h1>
+      <h1 className='title'>Hello World!</h1>
       <StaticImage
         formats={['jpg']}
         src='../images/treeInForest.jpg'

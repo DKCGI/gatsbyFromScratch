@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
         `}
         render={(data) => <Header data={data} />}
       />
-      {children}
+      <div className='content'>{children}</div>
       <Helmet>
         <meta charSet='utf-8' />
         <title>Parrots</title>
